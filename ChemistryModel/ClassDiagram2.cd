@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChemistryUnits" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAAKiAAAggAAAABAAAAAIAAiAIAAIAgAAAAAAA=</HashCode>
+      <FileName>ChemistryUnits.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="substance" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKACAAAAAAAAAQBAAAAIKBQAAAAIgAABCAiADAAAI=</HashCode>
+      <FileName>substance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Temperature" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Temperature.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pressure" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAIAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>pressure.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Volume" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAIgAAAAAAA=</HashCode>
+      <FileName>Volume.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Area" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAgAQAAAAA=</HashCode>
+      <FileName>Area.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAQCAAAAAAABAAAAABAAAAAAAAAAQAAACAAAAA=</HashCode>
+      <FileName>DataBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChemistrySystem" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIgBAAAAAAAAAAAAAAAAAAAAAAAIQEAYAgAAAIAAAAA=</HashCode>
+      <FileName>ChemistrySystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="UnitsKoeffs" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChemistryUnits.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ValueUnits" Collapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ChemistryUnits.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SystemParametrs" Collapsed="true">
+    <Position X="11.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAACAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parametrs.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SubstanceParametrs" Collapsed="true">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAEAAgAAAAAAAAAABAAAAAAAAAAAEkACAAAA=</HashCode>
+      <FileName>Parametrs.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
