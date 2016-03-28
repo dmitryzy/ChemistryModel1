@@ -20,6 +20,11 @@ void DataBase::SetSubstData(SubstanceParametrs Param)
 	;
 }
 
+bool DataBase::in_database(std::string Formula)
+{
+	return true;
+}
+
 DataBase::~DataBase()
 {
 }

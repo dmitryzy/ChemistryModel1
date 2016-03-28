@@ -10,11 +10,17 @@ ChemistrySystem::ChemistrySystem(std::string NewName, SystemParametrs SysParam, 
 	DB_ptr = DB;
 }
 
-std::shared_ptr<substance> ChemistrySystem::AddSubst(std::string Formula)
+bool ChemistrySystem::AddSubst(std::string Formula)
 {
-	auto newsubst = std::make_shared<substance>(Formula, SysParametrs, DB_ptr);
-	ListSubst[Formula] = newsubst;
-	return newsubst;
+	auto res = false;
+	if (DB_ptr->in_database(Formula))
+	{
+		auto newsubst = std::make_shared<substance>(Formula, SysParametrs, DB_ptr);
+		ListSubst[Formula] = newsubst;
+		res = true;
+	}
+
+	return res;
 }
 
 bool ChemistrySystem::RemoveSubstFormula(std::string Formula)

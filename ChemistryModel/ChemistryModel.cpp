@@ -23,13 +23,22 @@ int main()
 	pressure P1;
 	SystemParametrs Param = { &T1, &P1, &V1 };
 	ChemistrySystem CHS("NewSyStem",Param,&MyDb);
-	std::shared_ptr<substance> S1=CHS.AddSubst("X");
-	std::shared_ptr<substance> S2 = CHS.AddSubst("Y");
+	CHS.AddSubst("X");
+	CHS.AddSubst("Y");
+	std::shared_ptr<substance> S1=CHS.GetSubst("X");
+	std::shared_ptr<substance> S2 = CHS.GetSubst("Y");
+
+	S2->SetAmount(1);
+	S1->SetAmount(1);
 	//substance S1("X",Param, &MyDb);
-	std::cout << CHS.GetCountSubst() << std::endl;
+	std::cout << CHS.GetSystemEntalpy() << std::endl;
 	//
-	CHS.RemoveSubstFormula("X");
-	std::cout << CHS.GetCountSubst()<< std::endl;
+	S1->ChangeAmount(1);
+	S2->ChangeAmount(1);
+	std::cout << CHS.GetSystemEntalpy() << std::endl;
+	//
+	//CHS.RemoveSubstFormula("X");
+	//std::cout << CHS.GetCountSubst()<< std::endl;
 	/*
 	Volume V1;
 	V1.SetValue(250, "ml"); 
