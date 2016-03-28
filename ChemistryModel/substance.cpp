@@ -95,6 +95,11 @@ SubstanceParametrs substance::GetSubstParam()
 	return SubstParam;
 }
 
+float substance::GetAmount()
+{
+	return AmountSubstance;
+}
+
 float substance::GibbsEnergy()
 {
 	auto EntalpyT = SubstParam.StandartEntalpy;

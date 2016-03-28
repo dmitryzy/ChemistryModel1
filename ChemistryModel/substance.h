@@ -12,6 +12,7 @@ public:
 	substance(std::string NewSubstanceFormula, SystemParametrs SysParam, DataBase *DB);
 	std::string GetFormula();
 	SubstanceParametrs GetSubstParam();
+	float GetAmount();
 	float GibbsEnergy();
 	float GelmgolzEnergy();
 	float Entalpy();
