@@ -14,17 +14,18 @@ public:
 	ChemistrySystem(std::string NewName, SystemParametrs SysParam, DataBase *DB);
 	//
 	//Добавить вещество
-	//Создает новый объект и возвращает указатель на добавленный объект
+	//Создает новый объект
+	//Проверяет наличие вещества в базе данных
 	//1 Формула нового вещества
-	std::shared_ptr<substance> AddSubst(std::string Formula);
+	bool AddSubst(std::string Formula);
 	//
 	//Удаляет вещество
 	//1 Формула вещества
-	void RemoveSubstFormula(std::string Formula);
+	bool RemoveSubstFormula(std::string Formula);
 	//
 	//Удаляет вещество
 	//1 Указатель на объект
-	void RemoveSubstFormula(std::shared_ptr<substance> RemoveObj);
+	bool RemoveSubstFormula(std::shared_ptr<substance> RemoveObj);
 	//
 	//Возвращает ссылку на вещество с заданной формулой
 	//1 Формула вещества
@@ -36,6 +37,15 @@ public:
 	//Изменяет параметры системы
 	//1 Структура с описанием параметров системы
 	void ChangeSystemParametrs(SystemParametrs NewParametrs);
+	//
+	//Проверка наличия формулы в коллекции
+	bool is_system_subst(std::string Formula);
+	//
+	//Рассчет системных характеристик
+	float GetSystemGiggsEnergy();
+	float GetSystemGelmgolzEnergy();
+	float GetSystemEntalpy();
+	float GetSystemEntropy();
 	~ChemistrySystem();
 private:
 	//Название
@@ -46,5 +56,6 @@ private:
 	SystemParametrs SysParametrs;
 	//Указатель на базу данных
 	DataBase *DB_ptr;
+	//Описание структуры
 };
 
